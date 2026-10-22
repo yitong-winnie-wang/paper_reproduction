@@ -1,0 +1,81 @@
+{
+  "training_and_evaluation": {
+    "seed": 1729,
+    "networks": [
+      "F1",
+      "C1",
+      "C2"
+    ],
+    "use_google_drive": true,
+    "drive_dir": "/content/drive/MyDrive/keskar_fig3_f1_c1_c2",
+    "local_dir": "/content/keskar_fig3_f1_c1_c2",
+    "data_dir": "/content/keskar_fig3_datasets",
+    "num_workers": 1,
+    "pin_memory": true,
+    "lr": 0.001,
+    "adam_betas": [
+      0.9,
+      0.999
+    ],
+    "adam_eps": 1e-08,
+    "weight_decay": 0.0,
+    "max_epochs": 100,
+    "patience": 15,
+    "min_delta": 0.0001,
+    "save_every_epochs": 1,
+    "bn_calibration_examples": 2048,
+    "alpha_min": -1.0,
+    "alpha_sb": 0.0,
+    "alpha_lb": 1.0,
+    "alpha_max": 2.0,
+    "alpha_grid_points": 61,
+    "input_divisor": 255.0,
+    "test_run_synthetic_checks": true,
+    "models": {
+      "F1": {
+        "dataset": "MNIST",
+        "small_batch": 256,
+        "large_batch": 6000,
+        "physical_batch": 256,
+        "eval_batch": 1024,
+        "calib_batch": 256
+      },
+      "C1": {
+        "dataset": "CIFAR10",
+        "small_batch": 256,
+        "large_batch": 5000,
+        "physical_batch": 128,
+        "eval_batch": 256,
+        "calib_batch": 128
+      },
+      "C2": {
+        "dataset": "CIFAR10",
+        "small_batch": 256,
+        "large_batch": 5000,
+        "physical_batch": 32,
+        "eval_batch": 64,
+        "calib_batch": 32
+      }
+    }
+  },
+  "plot_style": {
+    "rows": 1,
+    "figsize": [
+      18,
+      5
+    ],
+    "dpi": 180,
+    "line_width": 1.7,
+    "train_ls": "-",
+    "test_ls": "--",
+    "loss_color": "#225bb3",
+    "accuracy_color": "#ca3030",
+    "accuracy_ylim": [
+      0,
+      100
+    ],
+    "grid_alpha": 0.35,
+    "file_name": "figure3_F1_C1_C2_computed.png"
+  },
+  "recovery": "F1/C1 evaluated originally; C2 evaluated with per-alpha autosave"
+}
