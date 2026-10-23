@@ -1,0 +1,28 @@
+{
+  "source_paper": "Higgins et al. ICLR 2017, Figure 7A/7B",
+  "official_data_url": "https://raw.githubusercontent.com/google-deepmind/dsprites-dataset/master/dsprites_ndarray_co1sh3sc6or40x32y32_64x64.npz",
+  "dataset_sha256": "857dc001287e8efa226e0025fac6b29e5745c621b380b0d3363e4e33f4e28fa2",
+  "training_steps_are_author_specified": false,
+  "figure7_anchor_is_author_specified": false,
+  "runs": [
+    "/content/drive/MyDrive/beta_vae_figure7_colab/beta4_seed7",
+    "/content/drive/MyDrive/beta_vae_figure7_colab/beta4_seed19",
+    "/content/drive/MyDrive/beta_vae_figure7_colab/beta4_seed41",
+    "/content/drive/MyDrive/beta_vae_figure7_colab/beta1_seed7",
+    "/content/drive/MyDrive/beta_vae_figure7_colab/beta1_seed19",
+    "/content/drive/MyDrive/beta_vae_figure7_colab/beta1_seed41"
+  ],
+  "per_run": [
+    "checkpoint.pt",
+    "training_history.json",
+    "metrics.json",
+    "analysis_metrics.npz",
+    "figure7_reproduction.png",
+    "all_factor_responses.png",
+    "all_latent_traversals.png"
+  ],
+  "summary_files": [
+    "run_metrics.csv",
+    "seed_summary.csv"
+  ]
+}
