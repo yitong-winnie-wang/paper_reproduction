@@ -119,13 +119,6 @@ response plots are written alongside.
 
 ---
 
-## LLM use
-
-This assignment asked for the first reproduction attempt to be produced by an LLM, and
-for the failures of that attempt to be recorded. Each paper's folder keeps the code as it
-was actually run; where the first attempt had to be corrected, the report for that paper
-describes what was wrong and what changed. The shared conversation links and the model
-version are in the reports.
 
 ## Repository layout
 
