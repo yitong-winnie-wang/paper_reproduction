@@ -1,4 +1,4 @@
-# Paper Reproductions — CS 6362 Assignment 2
+# Paper Reproductions — Assignment 2
 
 Reproductions of one figure from each of three ICLR 2017 papers. Each paper has its own
 folder, its own notebook, and its own saved results. Everything in this repository was
