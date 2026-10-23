@@ -117,20 +117,4 @@ response plots are written alongside.
 
 **Runtime.** About 2 hours per β.
 
----
 
-
-## Repository layout
-
-```
-paper1_zhang/
-  paper1_zhang.ipynb
-  results/
-paper2_keskar/
-  paper2_keskar.ipynb
-  results/
-paper3_higgins/
-  paper3_higgins.ipynb
-  results/
-README.md
-```
